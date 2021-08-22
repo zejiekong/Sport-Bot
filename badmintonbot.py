@@ -1,4 +1,4 @@
-#The following code is customised to the booking of badminton courts at Nanyang Technological University.
+#The following code is customised to the booking of badminton courts at Nanyang Technological University, Singapore.
 
 from selenium import webdriver
 from datetime import datetime
