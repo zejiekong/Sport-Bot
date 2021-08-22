@@ -27,7 +27,6 @@ timeinput = int(input("Slot:"))
 #Username = 
 #Password = 
 driver = webdriver.Chrome()
-client = Client("AC06b675e849ca915a2413c176b436a2a1", "e397e3b8369b19f310da881532a530d2")
 driver.get("https://sso.wis.ntu.edu.sg/webexe88/owa/sso_login1.asp?t=1&p2=https://wis.ntu.edu.sg/pls/webexe88/srce_smain_s.Notice_O&extra=&pg=")
 username_input = driver.find_element_by_xpath("/html/body/div/div/div[2]/table/tbody/tr/td/form/center[1]/table/tbody/tr/td/table/tbody/tr[2]/td[2]/input")
 username_input.send_keys(Username)
@@ -81,9 +80,6 @@ while True:
         break
     elif court_list == []:
         print("There are no vacant slots left.")
-        client.messages.create(to="+6583320438", \
-                       from_="+17852644138", \
-                       body="There are no vacant slots left.")
         driver.quit()
 
             
