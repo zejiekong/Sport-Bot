@@ -1,3 +1,5 @@
+#The following code is customised to the booking of badminton courts at Nanyang Technological University.
+
 from selenium import webdriver
 from datetime import datetime
 from selenium.webdriver.common.by import By
@@ -21,8 +23,9 @@ def timeslotxpath(time,court):
 court_list = [1,2,3,4,5,6]
 court = int(input("Court:"))
 timeinput = int(input("Slot:"))
-Username = 'ZKONG002'
-Password = 'Angelmonster6349'
+#Below two lines are credentials of the website account.
+#Username = 
+#Password = 
 driver = webdriver.Chrome()
 client = Client("AC06b675e849ca915a2413c176b436a2a1", "e397e3b8369b19f310da881532a530d2")
 driver.get("https://sso.wis.ntu.edu.sg/webexe88/owa/sso_login1.asp?t=1&p2=https://wis.ntu.edu.sg/pls/webexe88/srce_smain_s.Notice_O&extra=&pg=")
